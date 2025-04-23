@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sample Template 1 || Portfolio </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav id="menubar">
+            <ul class="nav_ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="">Resume</a></li>
+            </ul>
+            <ul class="nav_ul">
+                <li><a href=""><img src="./Images/email.png" alt="email" class="icon"></a></li>
+                <li><a href=""><img src="./Images/linkedin.png" alt="linkedin" class="icon"></a></li>
+                <li><a href=""><img src="./Images/github.png" alt="github" class="icon"></a></li>
+            </ul>
+        </nav>
+
+        <nav id="menu">
+            <img src="./Images/menu.svg" alt="menu_icon" id="menu_icon">
+            <ul class="nav_ul2">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="">Resume</a></li>
+                <li id="social"><a href=""><img src="./Images/email.png" alt="email" class="icon"></a>
+                    <a href=""><img src="./Images/linkedin.png" alt="linkedin" class="icon"></a>
+                    <a href=""><img src="./Images/github.png" alt="github" class="icon"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="work">
+        <h1>Data Engineer Project: Real-Time Shopify Data ETL with Kafka, Azure Event Hub & Databricks</h1>
+        <img src="https://www.shutterstock.com/image-photo/analyst-uses-computer-dashboard-data-600nw-2285412737.jpg"
+            alt="Data Engineer Project" class="img_projects">
+
+        <div class="work_content">
+            <div>
+                <h3>Objective:</h3>
+                <p class="text_content">Developed an ETL pipeline to stream and process real-time Shopify order data
+                    using Kafka, Azure Event
+                    Hub, Databricks, and various cloud technologies for scalable data processing and transformation.</p>
+            </div>
+            <div>
+                <h3>Technical Highlights:</h3>
+                <ul class="text">
+                    <li>Built a Python function to extract real-time Shopify order data via GCP Pub/Sub and Kafka, and
+                        synchronized it with Azure Event Hub.</li>
+                    <li>Deployed Azure Unity Catalog and Key Vault for enhanced data security and governance.</li>
+                    <li>Developed Databricks notebooks using PySpark for real-time ingestion from Event Hub,
+                        implementing
+                        checkpointing for data reliability across Bronze, Silver, and Golden transformation layers.</li>
+                    <li>Integrated dimensional data via Fivetran, and implemented Slowly Changing Dimension (SCD) Type 2
+                        for
+                        data versioning.</li>
+                    <li>Used DBT for data transformation, building views and tables for reporting and dashboards and
+                        deploy
+                        it with Apache Airflow Click here to access the DBT package</li>
+                    <li>Ensured code quality with unit tests and code linting using Ruff.</li>
+                    <li>Established CI/CD pipelines with DAB(Data Asset Bundle) or Terraform((IaC) deployed by GitHub
+                        Actions for automation. Click here to access the Terraform package
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Technologies:</h3>
+                <p class="text_content">Azure, Databricks, Fivetran, DBT, Kafka, GCP Pub/Sub, Python, Pyspark, CI/CD
+                    (GitHub Actions), SCD Type
+                    2, Python,SQL, Eventhub, DAB(Data Asset Bundle), Terraform((IaC), Unittest, Ruff, Apache Airflow</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="other">
+        <h1>Other Projects</h1>
+        <div class="other_projects">
+
+            <a href="project2.html" class="project-a">
+                <img src="https://www.shutterstock.com/image-photo/businessman-using-kpi-dashboardfinancial-business-600nw-2508942019.jpg"
+                    alt="" class="other_projects_img">
+                <p class="project-description">Real-Time Data Sync from Wikimedia API to MySQL using Kafka</p>
+            </a>
+
+            <a href="project3.html" class="project-a">
+                <img src="https://flatironschool.com/wp-content/uploads/2024/05/BLOG_What-Do-Data-Analysts-Do.jpg"
+                    alt="" class="other_projects_img">
+                <p class="project-description">Full Stack ETL Project</p>
+            </a>
+
+            <a href="project4.html" class="project-a">
+                <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Data_Analystim.jpg" alt=""
+                    class="other_projects_img">
+                <p class="project-description">Holman API Data Pipeline Project</p>
+            </a>
+
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer_container">
+            <a href=""><img src="./Images/email.png" alt="email" class="icons"></a>
+            <a href=""><img src="./Images/linkedin.png" alt="linkedin" class="icons"></a>
+            <a href=""><img src="./Images/github.png" alt="github" class="icons"></a>
+        </div>
+
+        <hr>
+
+        <p>Copyright © 2025 by XYZ123 | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

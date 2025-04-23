@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sample Template 1 || Portfolio </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header>
+        <nav id="menubar">
+            <ul class="nav_ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="">Resume</a></li>
+            </ul>
+            <ul class="nav_ul">
+                <li><a href=""><img src="./Images/email.png" alt="email" class="icon"></a></li>
+                <li><a href=""><img src="./Images/linkedin.png" alt="linkedin" class="icon"></a></li>
+                <li><a href=""><img src="./Images/github.png" alt="github" class="icon"></a></li>
+            </ul>
+        </nav>
+        <nav id="menu">
+            <img src="./Images/menu.svg" alt="menu_icon" id="menu_icon">
+            <ul class="nav_ul2">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="">Resume</a></li>
+                <li id="social"><a href=""><img src="./Images/email.png" alt="email" class="icon"></a>
+                    <a href=""><img src="./Images/linkedin.png" alt="linkedin" class="icon"></a>
+                    <a href=""><img src="./Images/github.png" alt="github" class="icon"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="work">
+        <h1>Data Engineer Project: Real-Time Data Sync from Wikimedia API to MySQL using Kafka</h1>
+        <img src="https://www.shutterstock.com/image-photo/businessman-using-kpi-dashboardfinancial-business-600nw-2508942019.jpg"
+            alt="Data Engineer Project" class="img_projects">
+        <div class="work_content">
+            <div>
+                <h3>Objective:</h3>
+                <p class="text_content">Developed a real-time data streaming solution to fetch data from the
+                    Wikimedia API, process it with
+                    Kafka, and forward it to MySQL for further use, enabling efficient data storage and processing.
+                </p>
+            </div>
+            <div>
+                <h3>Technical Highlights:</h3>
+                <ul class="text">
+                    <li>Built a multi-module Spring Boot application with Maven, integrating Apache Kafka for real-time
+                        data
+                        streaming and processing.</li>
+                    <li>Implemented a Kafka producer to stream data from the Wikimedia API into a Kafka topic, and a
+                        Kafka
+                        consumer to forward data to Azure Event Hub.</li>
+                    <li>Utilized the EventSource library for processing real-time data from Wikimedia and Jackson for
+                        efficient JSON parsing.</li>
+                    <li>Configured MySQL within the Spring Boot application to persist data consumed by Kafka, using
+                        Spring
+                        Data JPA for efficient data storage.</li>
+                    <li>Conducted end-to-end testing of the entire pipeline to ensure reliable data flow from Wikimedia
+                        to
+                        Event Hub and MySQL.</li>
+                    <li>Established CI/CD pipelines with Apache Airflow in Docker.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Technologies:</h3>
+                <p class="text_content">Java, Spring Boot, Apache Kafka, Azure Event Hub, MySQL, EventSource, Jackson,
+                    Apache Airflow, Docker,
+                    Unittest, Ruff</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="other">
+        <h1>Other Projects</h1>
+        <div class="other_projects">
+
+            <a href="project1.html" class="project-a">
+                <img src="https://www.shutterstock.com/image-photo/analyst-uses-computer-dashboard-data-600nw-2285412737.jpg"
+                    alt="" class="other_projects_img">
+                <p class="project-description">Real-Time Shopify Data ETL with Kafka, Azure Event Hub & Databricks</p>
+            </a>
+
+            <a href="project3.html" class="project-a">
+                <img src="https://flatironschool.com/wp-content/uploads/2024/05/BLOG_What-Do-Data-Analysts-Do.jpg"
+                    alt="" class="other_projects_img">
+                <p class="project-description">Full Stack ETL Project</p>
+            </a>
+
+            <a href="project4.html" class="project-a">
+                <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Data_Analystim.jpg" alt=""
+                    class="other_projects_img">
+                <p class="project-description">Holman API Data Pipeline Project</p>
+            </a>
+
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer_container">
+            <a href=""><img src="./Images/email.png" alt="email" class="icons"></a>
+            <a href=""><img src="./Images/linkedin.png" alt="linkedin" class="icons"></a>
+            <a href=""><img src="./Images/github.png" alt="github" class="icons"></a>
+        </div>
+
+        <hr>
+
+        <p>Copyright © 2025 by XYZ123 | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

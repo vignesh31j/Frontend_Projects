@@ -1,0 +1,392 @@
+/* General Styles Starts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    display: grid;
+    background-color: black;
+    font-family: "Lexend", sans-serif;
+    overflow-x: hidden;
+}
+
+canvas {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+  }
+/* General Styles Ends */
+
+/* Header Section Starts */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    /* border: 1px solid white; */
+}
+
+#menubar {
+    padding: 40px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu {
+    display: none;
+    padding: 30px;
+    background-color: rgb(0, 0, 0);
+}
+
+#menu_icon {
+    width: 40px;
+    height: 40px;
+}
+
+.nav_ul2 {
+    position: absolute;
+    display: none;
+    gap: 30px;
+    margin-top: 0px;
+    left: 0px;
+    background-color: rgb(0, 0, 0);
+    width: fit-content;
+    padding: 40px;
+}
+
+#menu:hover .nav_ul2 {
+    display: grid;
+}
+
+.nav_ul {
+    display: flex;
+    gap: 30px;
+}
+
+.nav_ul,.nav_ul2 li {
+    list-style: none;
+}
+
+.nav_ul,.nav_ul2 li a {
+    text-decoration: none;
+}
+
+.nav_ul,.nav_ul2 li a:hover {
+    transition: all 0.9s ease;
+    text-decoration: underline;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+#social {
+    display: flex;
+    gap: 20px;
+}
+/* Header Section Ends */
+
+/* Home Section Starts */
+#content {
+    position: sticky;
+    top: 100px;
+    z-index: -1;
+    height: 90vh;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid white; */
+}
+
+#name {
+    font-size: clamp(2.5rem, 10vw, 9.375rem);
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 11ch; /* Match the exact character count */
+    margin: 0 auto;
+    text-align: center;
+    border-right: 2px solid white;
+    animation: typing 4s steps(11, end) infinite alternate, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 15ch;
+    }
+}
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+        
+}
+
+#role {
+    font-size: clamp(1.5rem, 5vw, 4.375rem); /* 24px to 70px */
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+/* Home Section Ends */
+
+/* Projects Section Starts */
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    z-index: 1;
+}
+
+/* Each Project Block */
+.projects {
+    flex: 1 1 50%;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        flex: 1 1 100%; /* Full width on mobile */
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #menubar {
+        display: none;
+    }
+}
+
+.project-a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.project-a:hover {
+    transition: all 0.9s ease-in-out;
+    color: white;
+}
+
+.projects_img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.projects_img:hover {
+    transition: all 0.6s ease-in-out;
+    opacity: 50%;
+    box-shadow: 0px 0px 30px 5px rgba(255, 255, 255, 0.338);
+}
+
+.project-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: transparent;
+    text-align: center;
+    pointer-events: none;
+}
+
+.project-a:hover .project-description {
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+/* Projects file in another file Starting */
+.img_projects {
+    width: 850px;
+    height: auto;
+}
+
+#other {
+    margin: 50px;
+}
+
+.other_projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin: 30px;
+}
+
+.other_projects_img {
+    width: 500px;
+    height: 300px;
+}
+
+#project_name {
+    text-align: center;
+}
+
+.work {
+    display: grid;
+    padding: 20px;
+    gap: 35px;
+    justify-items: center;
+}
+
+.work_content {
+    display: grid;
+    gap: 20px;
+}
+
+.text_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text {
+    padding: 0px 20px;
+}
+/* Projects file in another file Ending */
+/* Projects Section Ends */
+
+/* About Section Starts */
+/* Social Media Section Starts */
+#social_media {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px 40px;
+}
+
+.social_media_content {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.social_media_content:hover {
+    transition: all 0.6s ease;
+    box-shadow: 0px 0px 10px white;
+}
+/* Social Media Section Ends */
+
+/* Education Section Starts */
+#edu_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 150px 40px;
+    /* border: 1px solid white; */
+}
+
+.edu_content {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+/* Education Section Ends */
+
+/* Skill Section Starts */
+#skill_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 150px 40px;
+    /* border: 1px solid white; */
+}
+
+.skill_content {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    row-gap: 20px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.skill_content:hover {
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px white;
+}
+
+.skill_img {
+    height: 100px;
+}
+/* Skill Section Ends */
+
+/* Resume Section Starts */
+#resume {
+    text-align: center;
+    /* border: 1px solid white; */
+}
+
+#resume a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#resume_content {
+    padding: 10px;
+    border-radius: 25px;
+    
+}
+
+#resume_content:hover {
+    transition: all 0.6s ease;
+    box-shadow: 0px 0px 10px white;
+}
+/* Resume Section Ends */
+/* About Section Ends */
+
+/* Footer Section Section */
+footer {
+    text-align: center;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 1px solid white; */
+    padding-top: 150px;
+}
+
+#footer_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icons {
+    width: 25px;
+    height: 25px;
+}
+/* Footer Section Ends  */
