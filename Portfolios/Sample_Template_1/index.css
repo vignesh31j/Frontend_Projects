@@ -287,6 +287,7 @@ header {
     padding: 15px;
     border-radius: 25px;
     cursor: pointer;
+    box-shadow: 0px 0px 3px white;
 }
 
 .social_media_content:hover {
@@ -348,6 +349,7 @@ header {
 #resume {
     text-align: center;
     /* border: 1px solid white; */
+    margin: 150px 0px;
 }
 
 #resume a {
@@ -358,7 +360,7 @@ header {
 #resume_content {
     padding: 10px;
     border-radius: 25px;
-    
+    box-shadow: 0px 0px 3px white;
 }
 
 #resume_content:hover {
